@@ -1,0 +1,492 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+body {
+  overflow-x: hidden !important;
+}
+@layer base {
+  a {
+    @apply inline-block no-underline;
+  }
+  h1 {
+    @apply block!;
+  }
+}
+@utility container {
+  max-width: 1680px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@theme {
+  --font-syne: "Syne", sans-serif;
+  --font-urbanist: "Urbanist", sans-serif;
+  --primary-color: #8a0707;
+  --secondary-color: #000000;
+  --text-color: #ffffff;
+  --gradient-color-hover: linear-gradient(
+    rgba(167, 167, 167, 1) 100%,
+    rgba(138, 7, 7, 1) 100%
+  );
+  --gradient-color-text: linear-gradient(
+    rgba(43, 43, 43, 1) 100%,
+    rgba(138, 7, 7, 1) 100%
+  );
+  --gradient-color-card-txt: linear-gradient(
+    rgba(0, 0, 0, 0) 0%,
+    rgba(138, 7, 7, 1) 100%
+  );
+  --gradient-color-card: linear-gradient(
+    rgba(255, 255, 255, 1) 0%,
+    rgba(153, 153, 153, 1) 0%
+  );
+
+  --breakpoint-3xl: 10px;
+  --breakpoint-xs: 475px;
+}
+
+@layer components {
+  .title2 {
+    font-family: var(--font-syne);
+    color: var(--text-color);
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 20px 0;
+    letter-spacing: 2px;
+  }
+  .sub-hd {
+    font-family: var(--font-syne);
+    font-size: 18px;
+    color: var(--text-color);
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .para {
+    font-family: var(--font-urbanist);
+    font-size: 18px;
+    color: var(--text-color);
+    letter-spacing: 2px;
+  }
+
+  .title1 {
+    font-family: var(--font-syne);
+    text-align: center;
+    color: var(--text-color);
+    font-weight: 900;
+    text-transform: uppercase;
+    /* max-width: 1600px; */
+  }
+  /* Header Section---------------- */
+  .nav-link {
+    font-family: var(--font-syne);
+    font-size: 16px;
+    color: var(--text-color);
+    font-weight: bold;
+    padding: 10px 15px;
+  }
+  .nav-link:hover,
+  .nav-link.active {
+    color: var(--primary-color);
+  }
+  .menu {
+    margin-left: auto;
+    color: var(--text-color);
+    display: block;
+    position: relative;
+    padding: 5px 20px;
+    z-index: 99;
+    display: flex;
+  }
+
+  .menu::after,
+  .menu::before {
+    content: "";
+    height: 2px;
+    background: var(--text-color);
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    right: 0;
+    transition: 0.5s linear;
+  }
+  .menu::after {
+    top: -5px;
+  }
+  .menu::before {
+    bottom: -5px;
+  }
+
+  .menu span {
+    height: 2px;
+    position: absolute;
+    background: var(--text-color);
+    display: inline-block;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.5s linear;
+  }
+  .menu.show span {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+
+  .menu.show::after {
+    transform: rotate(45deg) translate(12px);
+  }
+  .menu.show::before {
+    transform: rotate(-45deg) translate(12px);
+  }
+
+  /* <!-- Banner Section-------------------- --> */
+  .banner-section {
+    background: url("../Asset/Banner-BG.png") no-repeat center/cover;
+    min-height: calc(100vh - 85px);
+    padding: 40px 0 70px;
+  }
+  .banner-sub {
+    font-size: 20px;
+    color: var(--text-color);
+    opacity: 50%;
+    font-family: var(--font-syne);
+    font-weight: 800;
+    letter-spacing: 3px;
+  }
+
+  .circle-btn {
+    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  /* Red circle */
+  .circle-btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100px;
+    height: 100px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    z-index: 1;
+    transition: 0.5s linear;
+  }
+
+  /* Text */
+  .circle-btn span {
+    position: relative;
+    z-index: 2;
+    color: white;
+    font-family: var(--font-syne);
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-left: 40px;
+  }
+
+  .circle-btn:hover::before {
+    left: 200px;
+    transition: 0.5s ease-in-out;
+  }
+ 
+  .rotate-box {
+    -webkit-animation: rotation 30s linear infinite;
+    -moz-animation: rotation 30s linear infinite;
+    -ms-animation: rotation 30s linear infinite;
+  }
+  @-webkit-keyframes rotation {
+    0% {
+      -webkit-transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  @-moz-keyframes rotation {
+    0% {
+      -moz-transform: rotate(0deg);
+    }
+    100% {
+      -moz-transform: rotate(360deg);
+    }
+  }
+  @-ms-keyframes rotation {
+    0% {
+      -ms-transform: rotate(0deg);
+    }
+    100% {
+      -ms-transform: rotate(360deg);
+    }
+  }
+
+  /* @keyframes animate {
+    0% {
+      rotate: 0deg;
+    }
+    100% {
+      rotate: 360deg;
+    }
+  }
+
+  .r-img {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+  .r-img .img-bx {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    transform: rotate(calc(360deg / 8 * var(--i)));
+    transform-origin: 400px;
+  }
+  .r-img .img-bx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transform: rotate(calc(-360deg / 8 * var(--i)));
+    animation: animateimg-bx 15s linear infinite;
+  }
+
+  @keyframes animateimg-bx {
+    0% {
+      rotate: 0deg;
+    }
+    100% {
+      rotate: 0deg;
+    }
+  } */
+  /*  <!-- About Section---------------------- -->*/
+  .about-sec {
+    background: url("../Asset/about-bg.png") no-repeat center/cover;
+  }
+  /*  <!-- Portfolio section --------------------------------> */
+  .portfolio-sec {
+    background: url("../Asset/portfolio-bg.png") no-repeat center/cover;
+  }
+  .p-img-bx:hover {
+    transform: scale(1.05);
+    transition: 0.5s ease-in-out;
+  }
+  /*  <!-- Services section --------------------------------> */
+  .services-sec {
+    background: url("../Asset/service-BG.png") no-repeat center/cover;
+  }
+  .service-card-1 {
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.244) 0%,
+      rgba(153, 153, 153, 0.116) 0%
+    );
+    border-radius: 20px;
+    border: 1px solid white;
+  }
+  .card-hdr {
+    font-family: var(--font-syne);
+    font-size: 18px;
+    color: var(--text-color);
+    font-weight: 800;
+    
+  }
+  .card-para {
+    font-family: var(--font-urbanist);
+    font-weight: 300;
+    color: var(--text-color);
+    letter-spacing: 2px;
+    line-height: 30px;
+  }
+  .card-num {
+    font-family: var(--font-syne);
+
+    background: linear-gradient(rgba(167, 167, 167, 0.322), rgba(138, 7, 7, 1));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    margin-left: 80px;
+  }
+  .cat-txt {
+    background: linear-gradient(
+      to bottom,
+      rgba(167, 167, 167, 0),
+      rgba(138, 7, 7, 1)
+    );
+
+    left: 0;
+    right: 0;
+    bottom: 0px;
+  }
+  .cat-txt-cntn {
+    font-family: var(--font-syne);
+
+    font-weight: 900;
+    color: var(--text-color);
+    text-align: center;
+  }
+  .cat-card:hover .cat-txt {
+    height: 50%;
+    transition: 0.5s linear;
+    padding: 0;
+  }
+  .cat-card:hover .cat-txt-cntn {
+    top: 50%;
+    color: var(--text-color);
+    text-shadow: 2px 4px 5px black;
+  }
+  /* Price Section------------------ ------- */
+  .price-section {
+    background: url("../Asset/price-bg.png") no-repeat center/cover;
+  }
+  .price-card-1 {
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.244) 0%,
+      rgba(153, 153, 153, 0.116) 0%
+    );
+    border-radius: 20px;
+    border: 1px solid white;
+  }
+  .crad-sub {
+    font-family: var(--font-syne);
+    font-size: 16px;
+    color: var(--text-color);
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .fcntn {
+    font-family: var(--font-urbanist);
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 2px;
+  }
+  .card-name {
+    font-family: var(--font-syne);
+    background: linear-gradient(rgba(138, 7, 7, 1), rgba(43, 43, 43, 1));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+    line-height: 50px;
+  }
+  .price {
+    font-family: var(--font-urbanist);
+
+    font-weight: bold;
+    color: var(--primary-color);
+  }
+
+  .price-card-1:hover .price-tag {
+    opacity: 1 !important;
+    transition: 0.5s linear;
+  }
+
+  .price-card-1:hover .card-name {
+    background: linear-gradient(
+      rgba(138, 7, 7, 0.486),
+      rgba(152, 152, 152, 0.607)
+    );
+
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .price-section .splide__pagination {
+    display: none !important;
+  }
+  .price-section .splide__arrows {
+    display: none !important;
+  }
+  /* -- Process Section------------- ----------- */
+  .process-section {
+    background: url("../Asset/process-BG.png") no-repeat center/cover;
+  }
+
+  /* Testimonial section----------------------- */
+  .testimonial-sec {
+    background: url("../Asset/testimonial-bg.png") no-repeat center/cover;
+  }
+  .card-q {
+    font-family: var(--font-urbanist);
+
+    font-weight: bold;
+    color: var(--text-color);
+  }
+  .t-para {
+    font-family: var(--font-urbanist);
+
+    margin: 20px 0;
+    color: var(--text-color);
+  }
+  .user-id {
+    font-family: var(--font-urbanist);
+    font-size: 20px;
+
+    color: var(--text-color);
+  }
+  .user-n {
+    font-family: var(--font-urbanist);
+
+    font-weight: bold;
+    color: var(--text-color);
+  }
+  /* Over-View Section----------------------- */
+  .overview-sec {
+    background: url("../Asset/over-view-bg.png") no-repeat center/cover;
+  }
+
+  .o-hdr {
+    font-family: var(--font-syne);
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--text-color);
+  }
+  .o-para {
+    font-family: var(--font-urbanist);
+
+    font-weight: 600;
+    color: var(--text-color);
+  }
+  /* Brand Section--------------------------- */
+
+  .brand-txt {
+    font-family: var(--font-syne);
+
+    font-weight: 900;
+    color: var(--text-color);
+
+    text-align: center;
+  }
+
+  /* Footer Section--------------- */
+  .footer-section {
+    background: url("../Asset/over-view-bg.png") no-repeat center/cover;
+  }
+  .f-hdr {
+    font-family: var(--font-syne);
+
+    font-weight: bold;
+    color: var(--text-color);
+  }
+  .f-link {
+    text-align: center;
+    font-family: var(--font-urbanist);
+
+    color: var(--text-color);
+    opacity: 0.3;
+    margin: 10px;
+  }
+  .f-link:hover {
+    opacity: 1;
+  }
+  footer > li {
+    list-style-type: none!;
+  }
+}

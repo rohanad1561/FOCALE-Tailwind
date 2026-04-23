@@ -1,0 +1,1011 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FOCALÉ</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./Asset/favicon-32x32.png"
+    />
+    <!-- Splider Css----------------- -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
+
+    <link rel="stylesheet" href="./output/style.css" />
+  </head>
+  <body class="bg-[rgba(30,30,30,1)]">
+    <!-- Header Section-------------------- -->
+    <header class="navbar bg-black py-2">
+      <div class="container">
+        <nav class="flex items-center">
+          <div class="nav-logo">
+            <a class="w-[150px] sm:w-[256px]" href="./index.html">
+              <img
+                class="h-full w-full object-cover"
+                src="./Asset/logo.png"
+                alt=""
+              />
+            </a>
+          </div>
+
+          <div
+            class="navbar-collapsed md:transition-[0.5s ease-linear] lg:static lg:min-h-fit absolute bg-black min-h-screen m left-0 top-[-100%] w-full z-3 py-3"
+          >
+            <ul
+              class="flex lg:flex-row flex-col text-center gap-6 ms-auto justify-end pt-25 lg:py-0"
+            >
+              <li>
+                <a class="nav-link active" href="./index.html">HOME</a>
+              </li>
+              <li>
+                <a class="nav-link" href="./about.html">ABOUT</a>
+              </li>
+              <li>
+                <a class="nav-link" href="./services.html">SERVICES</a>
+              </li>
+              <li>
+                <a class="nav-link" href="./portfolio.html">PORTFOLIO</a>
+              </li>
+              <li>
+                <a class="nav-link" href="./blog.html">BLOG</a>
+              </li>
+              <li>
+                <a class="nav-link" href="./contact.html">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+          <div class="menu lg:hidden"><span></span></div>
+        </nav>
+      </div>
+    </header>
+    <!-- Banner Section-------------------- -->
+    <section class="banner-section relative overflow-hidden">
+      <div class="container">
+        <div class="banner-content mb-5">
+          <h1
+            class="title1 text-[30px]  xs:text-[45px] sm:text-[50px] md:text-[65px]  2xl:text-[80px]"
+          >
+            Turning Moments
+          </h1>
+          <h1
+            class="title1 text-[30px]  xs:text-[45px] sm:text-[50px] md:text-[65px]  2xl:text-[80px]"
+          >
+            Into <span class="text-[#8A0707]">Memories</span>
+          </h1>
+          <p class="banner-sub text-[14px] sm:text-[20px] text-center">
+            Creating Art Through Every Click
+          </p>
+        </div>
+        <div
+          class="rotate-box w-[900px] sm:w-[1000px]  md:w-[1200px] 2xl:w-[1350px] absolute bottom-[-40%] sm:bottom-[-40%] md:bottom-[-50%] 2xl:bottom-[-60%] bottom-0 translate-x-[-50%] rounded-full left-[50%]"
+          
+        >
+        <img class="h-full w-full object-cover" src="./Asset/round-img.png" alt="">
+          <!-- <div
+            class="max-w-[240px] ima-1 absolute rotate-[-47deg] translate-x-[-8%] translate-y-[-16%]"
+          >
+            <img
+              class="h-full w-full object-cover"
+              src="./Asset/banner1.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="max-w-[240px] ima-2 absolute rotate-[-3deg] translate-x-[150%] translate-y-[-63%]"
+          >
+            <img
+              class="h-full w-full object-cover"
+              src="./Asset/banner2.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="max-w-[240px] ima-3 absolute rotate-[45deg] translate-x-[319%] translate-y-[-19%]"
+          >
+            <img
+              class="h-full w-full object-cover"
+              src="./Asset/banner3.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="max-w-[240px] ima-4 absolute rotate-[90deg] translate-x-[388%] translate-y-[90%]"
+          >
+            <img
+              class="h-full w-full object-cover"
+              src="./Asset/banner4.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="max-w-[240px] ima-5 absolute rotate-[-90deg] translate-x-[-70%] translate-y-[100%]"
+          >
+            <img
+              class="h-full w-full object-cover"
+              src="./Asset/banner5.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="max-w-[240px] ima-6 absolute rotate-[-133deg] translate-x-[-3%] translate-y-[204%]"
+          >
+            <img
+              class="h-full w-full object-cover"
+              src="./Asset/banner6.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="max-w-[240px] ima-7 absolute rotate-[-178deg] translate-x-[150%] translate-y-[249%]"
+          >
+            <img
+              class="h-full w-full object-cover"
+              src="./Asset/banner7.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="max-w-[240px] ima-8 absolute rotate-[137deg] translate-x-[321%] translate-y-[204%]"
+          >
+            <img
+              class="h-full w-full object-cover"
+              src="./Asset/banner8.png"
+              alt=""
+            />
+          </div> -->
+        </div>
+        <div
+          class="banner-btn flex justify-center absolute bottom-[5%] left-1/2 -translate-x-1/2"
+        >
+          <a class="circle-btn   href="">
+            <span
+              class="m-0 sm:ms-10 text-center! text-[10px] xs:text-[14px] sm:text-left tracking-normal! xs:tracking-[2px]"
+              >DISCOVER MORE</span
+            >
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section---------------------- -->
+    <section class="about-sec py-15 xs:py-25">
+      <div class="container">
+        <div class="about-cntn flex flex-wrap items-center -mx-3.75">
+          <div class="w-full 2xl:w-7/12 px-3.75">
+            <div class="abt-txt-cntn text-center 2xl:text-left mb-15 2xl:mb-0">
+              <div
+                class="sub-hd text-[15px] md:text-[18px] tracking-normal! xs:tracking-[2px]"
+              >
+                About Us
+              </div>
+              <div class="title2 text-[17px] md:text-[30px] 2xl:text-[40px]">
+                Behind the lens
+              </div>
+              <div
+                class="para mx-auto text-[14px] md:text-[18px] 2xl:mx-0 max-w-[900px]"
+              >
+                We believe every image has a soul. Through light, emotion, and
+                timing, we frame stories that speak without words. Photography
+                is not just craft — it’s connection. Moments pass, but memories
+                we create last forever.
+                <br />
+                <br />
+                Fusce suere quis sem quis efficitur. Etiam ac cursus lacus a
+                retium arus crase eratodio congue a nulla quis iaculis laoreet
+                risus. Orci varius natoque penatis magnis miss the duru
+                parturient montes, nascetur ridiculus in the fermen.
+              </div>
+              <div class="abt-btn mt-[90px]">
+                <a class="circle-btn" href="">
+                  <span
+                    class="m-0 sm:ms-10 text-center! text-[10px] xs:text-[14px] sm:text-left tracking-normal! xs:tracking-[2px]"
+                    >Hello@FOCALÉ.com</span
+                  >
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="w-full 2xl:w-5/12 px-3.75">
+            <div class="abt-img-cntn max-w-[687px] mx-auto 2xl:mx-0">
+              <img
+                class="h-full w-full object-cover"
+                src="./Asset/about-img.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio Section----------------------  -->
+    <section class="portfolio-sec py-15 xs:py-25">
+      <div class="container">
+        <div class="port-cntn">
+          <div
+            class="sub-hd text-center text-[14px] md:text-[18px] tracking-normal! xs:tracking-[2px]"
+          >
+            Time stands still in every shot
+          </div>
+          <div
+            class="title2 text-center text-[17px] md:text-[30px] 2xl:text-[40px]"
+          >
+            Portfolio
+          </div>
+          <div
+            class="p-img-cntn flex justify-center items-center gap-20 xs:gap-16 2xl:gap-6"
+          >
+            <div
+              class="p-img-bx max-w-[150px] sm:max-w-[300px] mt-10 xs:mt-12 2xl:mt-25 relative z-10"
+            >
+              <img
+                class="h-full w-full object-cover"
+                src="./Asset/portfolio1.png"
+                alt=""
+              />
+            </div>
+            <div
+              class="p-img-bx max-w-[150px] sm:max-w-[300px] ms-[-110px] relative z-20"
+            >
+              <img
+                class="h-full w-full object-cover"
+                src="./Asset/portfolio2.png"
+                alt=""
+              />
+            </div>
+            <div
+              class="p-img-bx max-w-[150px] sm:max-w-[300px] ms-[-110px] mt-10 xs:mt-12 2xl:mt-25 relative z-30"
+            >
+              <img
+                class="h-full w-full object-cover"
+                src="./Asset/portfolio3.png"
+                alt=""
+              />
+            </div>
+            <div
+              class="p-img-bx max-w-[150px] sm:max-w-[300px] ms-[-110px] relative z-40"
+            >
+              <img
+                class="h-full w-full object-cover"
+                src="./Asset/portfolio4.png"
+                alt=""
+              />
+            </div>
+            <div
+              class="p-img-bx max-w-[150px] sm:max-w-[300px] ms-[-110px] mt-10 xs:mt-12 2xl:mt-25 relative z-50"
+            >
+              <img
+                class="h-full w-full object-cover"
+                src="./Asset/portfolio5.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="port-btn flex justify-center mt-[100px]">
+          <a class="circle-btn" href="">
+            <span
+              class="m-0 sm:ms-10 text-center! text-[10px] xs:text-[14px] sm:text-left tracking-normal! xs:tracking-[2px]"
+              >Hello@FOCALÉ.com</span
+            >
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Services section ------------------------------>
+    <section class="services-sec py-15 xs:py-25">
+      <div class="container">
+        <div
+          class="services-cntn flex flex-col xl:flex-row justify-between items-start mb-10 xl:mb-5 2xl:mb-0"
+        >
+          <div class="txt-cntn w-full lg:w-fit lg:mx-auto">
+            <div
+              class="sub-hd text-center 2xl:text-left text-[15px] md:text-[18px] tracking-normal! xs:tracking-[2px]"
+            >
+              Capture the Moment
+            </div>
+            <div
+              class="title2 text-center 2xl:text-left text-[17px] md:text-[30px] 2xl:text-[40px]"
+            >
+              Services
+            </div>
+          </div>
+          <div
+            class="para text-center text-[14px] md:text-[18px] w-full lg:max-w-[900px] mx-auto xl:ms-0 2xl:ms-auto"
+          >
+            Discover my professional services including photography,
+            videography, retouching, aerials, lighting, and grading — crafted to
+            capture your moments with precision and creativity.
+          </div>
+        </div>
+        <div class="service-card flex flex-wrap -mx-3.75">
+          <div class="w-full lg:w-1/2 2xl:w-[25%] px-3.75">
+            <div
+              class="mx-auto max-w-[500px] 2xl:max-w-fit 2xl:mx-0 mb-5 xl:mb-5 2xl:mb-0 service-card-1 px-[30px] py-[30px] xs:px-[50px] xs:py-[70px]"
+            >
+              <div class="card-cntn">
+                <div class="card-img max-w-[50px] w-full mx-auto 2xl:mx-0">
+                  <img
+                    class="h-full w-full object-cover"
+                    src="./Asset/camera-01.png"
+                    alt=""
+                  />
+                </div>
+                <div class="card-hdr text-center 2xl:text-left my-5">
+                  Photography
+                </div>
+                <div
+                  class="card-para text-[15px] xs:text-[20px] text-center 2xl:text-left max-w-[300px] w-full mx-auto"
+                >
+                  We don't just take photos — we capture emotions. With years of
+                  experience a creative eye, and a passion for storytelling,,
+                </div>
+                <div
+                  class="card-num text-[100px] xs:text-[150px] ms-10 xs:ms-20"
+                >
+                  01
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full lg:w-1/2 2xl:w-[25%] px-3.75">
+            <div
+              class="mx-auto max-w-[500px] 2xl:max-w-fit 2xl:mx-0 mb-5 xl:mb-5 2xl:mb-0 service-card-1 px-[30px] py-[30px] xs:px-[50px] xs:py-[70px]"
+            >
+              <div class="card-cntn">
+                <div class="card-img max-w-[50px] w-full mx-auto 2xl:mx-0">
+                  <img
+                    class="h-full w-full object-cover"
+                    src="./Asset/video-01.png"
+                    alt=""
+                  />
+                </div>
+                <div class="card-hdr text-center 2xl:text-left my-5">
+                  Videography
+                </div>
+                <div
+                  class="card-para text-[15px] xs:text-[20px] text-center 2xl:text-left max-w-[300px] w-full mx-auto"
+                >
+                  We don't just take photos — we capture emotions. With years of
+                  experience a creative eye, and a passion for storytelling,,
+                </div>
+                <div
+                  class="card-num text-[100px] xs:text-[150px] ms-10 xs:ms-20"
+                >
+                  02
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full lg:w-1/2 2xl:w-[25%] px-3.75">
+            <div
+              class="mx-auto max-w-[500px] 2xl:max-w-fit 2xl:mx-0 mb-5 xl:mb-5 2xl:mb-0 service-card-1 px-[30px] py-[30px] xs:px-[50px] xs:py-[70px]"
+            >
+              <div class="card-cntn">
+                <div class="card-img max-w-[50px] w-full mx-auto 2xl:mx-0">
+                  <img
+                    class="h-full w-full object-cover"
+                    src="./Asset/magic-wand-04.png"
+                    alt=""
+                  />
+                </div>
+                <div class="card-hdr text-center 2xl:text-left my-5">
+                  Retouching
+                </div>
+                <div
+                  class="card-para text-[15px] xs:text-[20px] text-center 2xl:text-left max-w-[300px] w-full mx-auto"
+                >
+                  We don't just take photos — we capture emotions. With years of
+                  experience a creative eye, and a passion for storytelling,,
+                </div>
+                <div
+                  class="card-num text-[100px] xs:text-[150px] ms-10 xs:ms-20"
+                >
+                  03
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full lg:w-1/2 2xl:w-[25%] px-3.75">
+            <div
+              class="mx-auto max-w-[500px] 2xl:max-w-fit 2xl:mx-0 mb-5 xl:mb-5 2xl:mb-0 service-card-1 px-[30px] py-[30px] xs:px-[50px] xs:py-[70px]"
+            >
+              <div class="card-cntn">
+                <div class="card-img max-w-[50px] w-full mx-auto 2xl:mx-0">
+                  <img
+                    class="h-full w-full object-cover"
+                    src="./Asset/drone.png"
+                    alt=""
+                  />
+                </div>
+                <div class="card-hdr text-center 2xl:text-left my-5">Drone</div>
+                <div
+                  class="card-para text-[15px] xs:text-[20px] text-center 2xl:text-left max-w-[300px] w-full mx-auto"
+                >
+                  We don't just take photos — we capture emotions. With years of
+                  experience a creative eye, and a passion for storytelling,,
+                </div>
+                <div
+                  class="card-num text-[100px] xs:text-[150px] ms-10 xs:ms-20"
+                >
+                  04
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="catagory-card pt-15 xs:pt-25 flex flex-wrap">
+        <div class="cat-card relative w-1/2 2xl:w-[25%]">
+          <div class="cat-img">
+            <img
+              class="h-full w-full object-cover"
+              src="./Asset/category1.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="cat-txt absolute px-[10px] py-[10px] xs:px-[20px] xs:py-[30px]"
+          >
+            <div
+              class="cat-txt-cntn text-[14px] sm:text-[24px] leading-3 xs:leading-8"
+            >
+              wedding Photography
+            </div>
+          </div>
+        </div>
+        <div class="cat-card relative w-1/2 2xl:w-[25%]">
+          <div class="cat-img">
+            <img
+              class="h-full w-full object-cover"
+              src="./Asset/category2.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="cat-txt absolute px-[10px] py-[10px] xs:px-[20px] xs:py-[30px]"
+          >
+            <div
+              class="cat-txt-cntn text-[14px] sm:text-[24px] leading-3 xs:leading-8"
+            >
+              wedding Photography
+            </div>
+          </div>
+        </div>
+        <div class="cat-card relative w-1/2 2xl:w-[25%]">
+          <div class="cat-img">
+            <img
+              class="h-full w-full object-cover"
+              src="./Asset/category3.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="cat-txt absolute px-[10px] py-[10px] xs:px-[20px] xs:py-[30px]"
+          >
+            <div
+              class="cat-txt-cntn text-[14px] sm:text-[24px] leading-3 xs:leading-8"
+            >
+              wedding Photography
+            </div>
+          </div>
+        </div>
+        <div class="cat-card relative w-1/2 2xl:w-[25%]">
+          <div class="cat-img">
+            <img
+              class="h-full w-full object-cover"
+              src="./Asset/category4.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="cat-txt absolute px-[10px] py-[10px] xs:px-[20px] xs:py-[30px]"
+          >
+            <div
+              class="cat-txt-cntn text-[14px] sm:text-[24px] leading-3 xs:leading-8"
+            >
+              wedding Photography
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Price Section------------------ ------------->
+    <section class="price-section py-15 xs:py-25">
+      <div class="container">
+        <div class="price-cntn">
+          <div
+            class="sub-hd text-center text-[14px] md:text-[18px] tracking-normal! xs:tracking-[2px] break-words leading-snug"
+          >
+            Choose the package that fits your story
+          </div>
+          <div
+            class="title2 text-center text-[17px] md:text-[30px] 2xl:text-[40px]"
+          >
+            Price plan
+          </div>
+        </div>
+
+        <div class="splide" id="auto">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div
+                  class="price-card-1 pt-[30px] md:pt-[70px] px-[30px] xs:px-[45px] relative"
+                >
+                  <div class="card-cntn">
+                    <div class="crad-sub">Get a quote</div>
+                    <div class="card-hdr uppercase my-5">Wedding Package</div>
+                    <ul class="card-feature ms-4 space-y-2 md:space-y-4">
+                      <li class="list-disc! text-white">
+                        <div class="fcntn">Full-day coverage</div>
+                      </li>
+                      <li class="list-disc text-white">
+                        <div class="fcntn">100+ edited photos</div>
+                      </li>
+                      <li class="list-disc text-white">
+                        <div class="fcntn">Premium album</div>
+                      </li>
+                      <li class="list-disc text-white">
+                        <div class="fcntn">Pre-wedding shoot</div>
+                      </li>
+                      <li class="list-disc text-white">
+                        <div class="fcntn">2 photographers</div>
+                      </li>
+                      <li class="list-disc text-white">
+                        <div class="fcntn">Online gallery</div>
+                      </li>
+                    </ul>
+                    <div class="price-btn flex mt-[55px] md:mt-[70px]">
+                      <a
+                        class="circle-btn m-0 sm:ms-10 text-center! text-[10px] xs:text-[14px] sm:text-left tracking-normal! xs:tracking-[2px]"
+                        href=""
+                      >
+                        <span
+                          class="m-0 sm:ms-10 text-center! text-[10px] xs:text-[14px] sm:text-left tracking-normal! xs:tracking-[2px]"
+                          >GET IN TOUCH</span
+                        >
+                      </a>
+                    </div>
+                    <div
+                      class="card-name uppercase text-center text-[25px] xs:text-[50px] mt-15 md:mt-20"
+                    >
+                      Wedding
+                    </div>
+                  </div>
+                  <div
+                    class="price-tag absolute z-1 p-3 xs:p-5 opacity-0 bg-white rounded-[50px] top-[15px] right-[15px]"
+                  >
+                    <div class="price text-[20px] xs:text-[24px]">$700</div>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div
+                  class="price-card-1 pt-[30px] md:pt-[70px] px-[30px] xs:px-[45px] relative"
+                >
+                  <div class="card-cntn">
+                    <div class="crad-sub">Get a quote</div>
+                    <div class="card-hdr uppercase my-5">Drone Add-on</div>
+                    <ul class="card-feature ms-4 space-y-2 md:space-y-4">
+                      <li class="list-disc text-white">
+                        <div class="fcntn">Full-day coverage</div>
+                      </li>
+                      <li class="list-disc text-white">
+                        <div class="fcntn">100+ edited photos</div>
+                      </li>
+                      <li class="list-disc text-white">
+                        <div class="fcntn">Premium album</div>
+                      </li>
+                      <li class="list-disc text-white">
+                        <div class="fcntn">Pre-wedding shoot</div>
+                      </li>
+                      <li class="list-disc text-white">
+                        <div class="fcntn">2 photographers</div>
+                      </li>
+                      <li class="list-disc text-white">
+                        <div class="fcntn">Online gallery</div>
+                      </li>
+                    </ul>
+                    <div class="price-btn flex mt-[55px] md:mt-[70px]">
+                      <a
+                        class="circle-btn m-0 sm:ms-10 text-center! text-[10px] xs:text-[14px] sm:text-left tracking-normal! xs:tracking-[2px]"
+                        href=""
+                      >
+                        <span
+                          class="m-0 sm:ms-10 text-center! text-[10px] xs:text-[14px] sm:text-left tracking-normal! xs:tracking-[2px]"
+                          >GET IN TOUCH</span
+                        >
+                      </a>
+                    </div>
+                    <div
+                      class="card-name uppercase text-center text-[25px] xs:text-[50px] mt-15 md:mt-20"
+                    >
+                      DRONE
+                    </div>
+                  </div>
+                  <div
+                    class="price-tag absolute z-1 p-3 xs:p-5 opacity-0 bg-white rounded-[50px] top-[15px] right-[15px]"
+                  >
+                    <div class="price [20px] xs:text-[24px]">$700</div>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div
+                  class="price-card-1 pt-[30px] md:pt-[70px] px-[30px] xs:px-[45px] relative"
+                >
+                  <div class="card-cntn">
+                    <div class="crad-sub">Get a quote</div>
+                    <div class="card-hdr uppercase my-5">Travel Session</div>
+                    <ul class="card-feature ms-4 space-y-2 md:space-y-4">
+                      <li class="list-disc text-white">
+                        <div class="fcntn">Full-day coverage</div>
+                      </li>
+                      <li class="list-disc text-white">
+                        <div class="fcntn">100+ edited photos</div>
+                      </li>
+                      <li class="list-disc text-white">
+                        <div class="fcntn">Premium album</div>
+                      </li>
+                      <li class="list-disc text-white">
+                        <div class="fcntn">Pre-wedding shoot</div>
+                      </li>
+                      <li class="list-disc text-white">
+                        <div class="fcntn">2 photographers</div>
+                      </li>
+                      <li class="list-disc text-white">
+                        <div class="fcntn">Online gallery</div>
+                      </li>
+                    </ul>
+                    <div class="price-btn flex mt-[55px] md:mt-[70px]">
+                      <a
+                        class="circle-btn m-0 sm:ms-10 text-center! text-[10px] xs:text-[14px] sm:text-left tracking-normal! xs:tracking-[2px]"
+                        href=""
+                      >
+                        <span
+                          class="m-0 sm:ms-10 text-center! text-[10px] xs:text-[14px] sm:text-left tracking-normal! xs:tracking-[2px]"
+                          >GET IN TOUCH</span
+                        >
+                      </a>
+                    </div>
+                    <div
+                      class="card-name uppercase text-center text-[25px] xs:text-[50px] mt-15 md:mt-20"
+                    >
+                      TRAVEL
+                    </div>
+                  </div>
+                  <div
+                    class="price-tag absolute z-1 p-3 xs:p-5 opacity-0 bg-white rounded-[50px] top-[15px] right-[15px]"
+                  >
+                    <div class="price [20px] xs:text-[24px]">$700</div>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div
+                  class="price-card-1 pt-[30px] md:pt-[70px] px-[30px] xs:px-[45px] relative"
+                >
+                  <div class="card-cntn">
+                    <div class="crad-sub">Get a quote</div>
+                    <div class="card-hdr uppercase my-5">Fashion Package</div>
+                    <ul class="card-feature ms-4 space-y-2 md:space-y-4">
+                      <li class="list-disc text-white">
+                        <div class="fcntn">Full-day coverage</div>
+                      </li>
+                      <li class="list-disc text-white">
+                        <div class="fcntn">100+ edited photos</div>
+                      </li>
+                      <li class="list-disc text-white">
+                        <div class="fcntn">Premium album</div>
+                      </li>
+                      <li class="list-disc text-white">
+                        <div class="fcntn">Pre-wedding shoot</div>
+                      </li>
+                      <li class="list-disc text-white">
+                        <div class="fcntn">2 photographers</div>
+                      </li>
+                      <li class="list-disc text-white">
+                        <div class="fcntn">Online gallery</div>
+                      </li>
+                    </ul>
+                    <div class="price-btn flex mt-[55px] md:mt-[70px]">
+                      <a class="circle-btn" href="">
+                        <span
+                          class="m-0 sm:ms-10 text-center! text-[10px] xs:text-[14px] sm:text-left tracking-normal! xs:tracking-[2px]"
+                          >GET IN TOUCH</span
+                        >
+                      </a>
+                    </div>
+                    <div
+                      class="card-name uppercase text-center text-[25px] xs:text-[50px] mt-15 md:mt-20"
+                    >
+                      Fashion
+                    </div>
+                  </div>
+                  <div
+                    class="price-tag absolute z-1 p-3 xs:p-5 opacity-0 bg-white rounded-[50px] top-[15px] right-[15px]"
+                  >
+                    <div class="price [20px] xs:text-[24px]">$700</div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Process Section------------- ------------>
+    <section class="process-section py-15 xs:py-25">
+      <div class="container">
+        <div class="proces-cntn">
+          <div class="sub-hd text-center text-[14px] md:text-[18px] tracking-normal! xs:tracking-[2px] break-words leading-snug">Time stands still in every shot</div>
+          <div class="title2 text-center">Portfolio</div>
+        </div>
+        <div class="process-card flex flex-wrap -mx-3.75">
+          <div class="  mb-5 xl:mb-0 w-full md:w-1/2 xl:w-[33.33%] px-3.75">
+            <div class="service-card-1 px-[50px] py-[70px]">
+              <div class="card-cntn">
+                <div class="card-num text-[100px] xs:text-[150px] ms-0">01</div>
+                <div class="card-hdr mb-5">Consult & Plan</div>
+                <div class="card-para text-start max-w-[400px] w-full ">
+                  We start by understanding your vision and goals, ensuring
+                  every detail is aligned with your expectations for a seamless
+                  shoot.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="  mb-5 xl:mb-0 w-full md:w-1/2 xl:w-[33.33%] px-3.75">
+            <div class="service-card-1 px-[50px] py-[70px]">
+              <div class="card-cntn">
+                <div class="card-num text-[100px] xs:text-[150px]  ms-0">02</div>
+                <div class="card-hdr mb-5">Shoot Day</div>
+                <div class="card-para text-start max-w-[400px] w-full ">
+                  We start by understanding your vision and goals, ensuring
+                  every detail is aligned with your expectations for a seamless
+                  shoot.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mx-auto xl:mx-0 mb-5 xl:mb-0 w-full md:w-1/2 xl:w-[33.33%] px-3.75">
+            <div class="service-card-1 px-[50px] py-[70px]">
+              <div class="card-cntn">
+                <div class="card-num text-[100px] xs:text-[150px]   ms-0">03</div>
+                <div class="card-hdr mb-5">Edit & Deliver</div>
+                <div class="card-para text-start max-w-[400px]">
+                  We start by understanding your vision and goals, ensuring
+                  every detail is aligned with your expectations for a seamless
+                  shoot.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonial Section ------------------>
+    <section class="testimonial-sec py-10 xs:py-25">
+      <div class="container">
+        <div class="about-cntn flex flex-wrap -mx-3.75 items-center">
+          <div class="w-full 2xl:w-6/12 px-3.75">
+            <div class="abt-txt-cntn text-center 2xl:text-left">
+              <div
+                class="title2 max-w-[700px] mx-auto 2xl:mx-0 text-[17px] md:text-[30px] 2xl:text-[40px] mb-15 2xl:mb-0"
+              >
+                Let’s Turn Moments Into Masterpieces
+              </div>
+              <div class="abt-btn mx-auto 2xl:mx-0 my-[50px]">
+                <a class="circle-btn" href="">
+                  <span
+                    class="m-0 sm:ms-10 text-center! text-[10px] xs:text-[14px] sm:text-left tracking-normal! xs:tracking-[2px]"
+                    >Hello@FOCALÉ.com</span
+                  >
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="w-full 2xl:w-6/12 px-3.75">
+            <div class="test-card bg-[#1E1E1E] p-8 md:p-25">
+              <div class="t-card-cntn">
+                <div class="card-q text-[20px] xs:text-[32px]">
+                  What Are Clients Saying?
+                </div>
+                <div class="t-para text-[16px] sm:text-[20px]">
+                  We don't just take photos — we capture emotions. With years of
+                  experience a creative eye, and a passion for storytelling,,We
+                  don't just take photos — we capture emotions. With years of
+                  experience a creative eye, and a passion for storytelling,,
+                </div>
+                <div class="user-cntn flex items-center justify-between">
+                  <div class="user-data flex items-center">
+                    <div class="user-img">
+                      <img src="./Asset/user.png" alt="" />
+                    </div>
+                    <div class="user-name ms-5">
+                      <div class="user-n text-[18px] xs:text-[24px]">
+                        Rimi Johnson
+                      </div>
+                      <div class="user-id text-[14px] xs:text-[20px]">
+                        Customer
+                      </div>
+                    </div>
+                  </div>
+                  <div class="colon">
+                    <img src="./Asset/colon.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Over-View Section----------------------- -->
+    <section class="overview-sec py-10 xs:py-25">
+      <div class="container">
+        <div class="over-card flex flex-wrap -mx-3.75">
+          <div class="o-card mb-5 2xl:mb-0 w-full sm:w-1/2 2xl:w-3/12 px-3.75">
+            <div class="o-img flex justify-center">
+              <img src="./Asset/man-woman.png" alt="" />
+            </div>
+            <div
+              class="o-hdr my-2.5 lg:my-5 text-[20px] lg:text-[32px] text-center"
+            >
+              5K+
+            </div>
+            <div class="o-para text-center text-[20px] xs:text-[24px]">
+              Happy Customer
+            </div>
+          </div>
+          <div class="o-card mb-5 2xl:mb-0 w-full sm:w-1/2 2xl:w-3/12 px-3.75">
+            <div class="o-img flex justify-center">
+              <img src="./Asset/camera-01.png" alt="" />
+            </div>
+            <div
+              class="o-hdr my-1 lg:my-5 text-[20px] lg:text-[32px] text-center"
+            >
+              30K+
+            </div>
+            <div class="o-para text-center text-[20px] xs:text-[24px]">
+              Photos Taken
+            </div>
+          </div>
+          <div class="o-card mb-5 2xl:mb-0 w-full sm:w-1/2 2xl:w-3/12 px-3.75">
+            <div class="o-img flex justify-center">
+              <img src="./Asset/champion.png" alt="" />
+            </div>
+            <div
+              class="o-hdr my-2.5 lg:my-5 text-[20px] lg:text-[32px] text-center"
+            >
+              121
+            </div>
+            <div class="o-para text-center text-[20px] xs:text-[24px]">
+              Awarad Winning
+            </div>
+          </div>
+          <div class="o-card mb-5 2xl:mb-0 w-full sm:w-1/2 2xl:w-3/12 px-3.75">
+            <div class="o-img flex justify-center">
+              <img src="./Asset/calendar-02.png" alt="" />
+            </div>
+            <div
+              class="o-hdr my-2.5 lg:my-5 text-[20px] lg:text-[32px] text-center"
+            >
+              8K+
+            </div>
+            <div class="o-para text-center text-[20px] xs:text-[24px]">
+              Event Covered
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Brand Section------------------- -->
+    <section class="brand-section sec-padding relative">
+      <img
+        class="h-full w-full object-cover"
+        src="./Asset/Frame 70.png"
+        alt=""
+      />
+      <div
+        class="brand-txt-cntn absolute z-1 top-[35%] xs:top-[30%] md:top-[40%] left-[25%] lg:left-[30%] xl:left-[38%]"
+      >
+        <div class="brand-txt text-[8px] xs:text-[16px] md:text-[24px]">
+          WE WORK WITH
+        </div>
+        <div
+          class="text-[#8A0707] brand-txt text-[10px] xs:text-[16px] md:text-[24px]"
+        >
+          AMAZING BRANDS
+        </div>
+      </div>
+    </section>
+    <!-- Footer Section-------------------------------- -->
+    <footer class="footer-section sec-padding py-25">
+      <div class="container">
+        <div class="over-card flex flex-wrap -mx-3.75">
+          <div
+            class="f-card mb-5 lg:mb-0 w-full lg:w-1/2 2xl:w-3/12 px-3.75 flex justify-center 2xl:justify-start"
+          >
+            <div class="footer-logo">
+              <img src="./Asset/logo.png" alt="" />
+            </div>
+          </div>
+          <div class="f-card mb-5 lg:mb-0 w-full lg:w-1/2 2xl:w-3/12 px-3.75">
+            <div class="f-hdr text-center text-[24px] md:text-[32px]">
+              Get in touch
+            </div>
+            <ul class="mt-5">
+              <li class="f-link text-[18px] md:text-[24px]">
+                <a href="">Hello@FOCALÉ.com</a>
+              </li>
+              <li class="f-link text-[18px] md:text-[24px]">
+                <a href="">+1 234-567-8910</a>
+              </li>
+            </ul>
+          </div>
+          <div class="f-card mb-5 lg:mb-0 w-full md:w-1/2 2xl:w-3/12 px-3.75">
+            <div class="f-hdr text-center text-[24px] md:text-[32px]">
+              Locations
+            </div>
+            <ul class="mt-5">
+              <li class="f-link"><a href="">San Francisco — California</a></li>
+              <li class="f-link"><a href="">Palo Alto — Santa Clara</a></li>
+            </ul>
+          </div>
+          <div class="f-card mb-5 lg:mb-0 w-full md:w-1/2 2xl:w-3/12 px-3.75">
+            <div class="f-hdr text-center text-[24px] md:text-[32px]">
+              Locations
+            </div>
+            <div class="social-link">
+              <ul class="flex flex-row items-center justify-evenly mt-5">
+                <li
+                  class="w-13 sm:w-16 h-13 sm:h-16 flex items-center justify-center bg-black hover:bg-[#8A0707] rounded-full"
+                >
+                  <a href="#">
+                    <img src="./Asset/instagram.png" class="w-6 h-6" />
+                  </a>
+                </li>
+                <li
+                  class="w-13 sm:w-16 h-13 sm:h-16 flex items-center justify-center bg-black hover:bg-[#8A0707] rounded-full"
+                >
+                  <a href="#">
+                    <img
+                      src="./Asset/new-twitter-ellipse.png"
+                      class="w-6 h-6"
+                    />
+                  </a>
+                </li>
+                <li
+                  class="w-13 sm:w-16 h-13 sm:h-16 flex items-center justify-center bg-black hover:bg-[#8A0707] rounded-full"
+                >
+                  <a href="#">
+                    <img src="./Asset/youtube.png" class="w-6 h-6" />
+                  </a>
+                </li>
+                <li
+                  class="w-13 sm:w-16 h-13 sm:h-16 flex items-center justify-center bg-black hover:bg-[#8A0707] rounded-full"
+                >
+                  <a href="#">
+                    <img src="./Asset/tiktok.png" class="w-6 h-6" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Splider js -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+
+    <script src="./JS/script.js"></script>
+  </body>
+</html>
