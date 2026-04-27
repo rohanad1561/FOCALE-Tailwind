@@ -1,11 +1,294 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FOCALÉ</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./Asset/favicon-32x32.png"
+    />
+    <!-- Splider Css----------------- -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
+
+    <link rel="stylesheet" href="./output/style.css" />
+  </head>
+  <body class="bg-[rgba(30,30,30,1)]">
+    <!-- Header Section-------------------- -->
+    <header class="navbar bg-black py-2">
+      <div class="container">
+        <nav class="flex items-center">
+          <div class="nav-logo">
+            <a class="w-[150px] sm:w-[256px]" href="./index.html">
+              <img
+                class="h-full w-full object-cover"
+                src="./Asset/logo.png"
+                alt=""
+              />
+            </a>
+          </div>
+
+          <div
+            class="navbar-collapsed md:transition-[0.5s ease-linear] lg:static lg:min-h-fit absolute bg-black min-h-screen left-0 top-[-100%] w-full z-3 pt-25 lg:py-0"
+          >
+            <ul
+              class="flex lg:flex-row flex-col text-center gap-6 ms-auto justify-end"
+            >
+              <li>
+                <a class="nav-link" href="./index.html">HOME</a>
+              </li>
+              <li>
+                <a class="nav-link" href="./about.html">ABOUT</a>
+              </li>
+              <li>
+                <a class="nav-link" href="./services.html">SERVICES</a>
+              </li>
+              <li>
+                <a class="nav-link active" href="./portfolio.html">PORTFOLIO</a>
+              </li>
+              <li>
+                <a class="nav-link" href="./blog.html">BLOG</a>
+              </li>
+              <li>
+                <a class="nav-link m-0!" href="./contact.html">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+          <div class="menu lg:hidden"><span></span></div>
+        </nav>
+      </div>
+    </header>
+    <!-- POrtfolio Section------------- -->
+    <section class="portfolio-sec py-15 xs:py-25">
+      <div class="container">
+        <div class="port-cntn">
+          <div
+            class="sub-hd text-center text-[14px] md:text-[18px] tracking-normal! xs:tracking-[2px]"
+          >
+            Time stands still in every shot
+          </div>
+          <div
+            class="title2 text-center text-[17px] md:text-[30px] 2xl:text-[40px]"
+          >
+            Portfolio
+          </div>
+        </div>
+        <div class="port-card flex flex-wrap -mx-3.75 overflow-hidden">
+          <div class="p-card w-full lg:w-1/2 2xl:w-[33.33%] px-3 mb-5">
+            <img
+              class="mb-6 mx-auto lg-mx-0"
+              src="./Asset/portfolio/p1.png"
+              alt=""
+            />
+            <img
+              class="mb-6 rounded-2xl mx-auto lg-mx-0"
+              src="./Asset/portfolio/p4.png"
+              alt=""
+            />
+            <img
+              class="mb-6 rounded-2xl mx-auto lg-mx-0"
+              src="./Asset/portfolio/p7.png"
+              alt=""
+            />
+          </div>
+          <div class="p-card w-full lg:w-1/2 2xl:w-[33.33%] px-3 mb-5">
+            <img
+              class="mb-6 rounded-2xl mx-auto lg-mx-0"
+              src="./Asset/portfolio/p2.png"
+              alt=""
+            />
+            <img
+              class="mb-6 rounded-2xl mx-auto lg-mx-0"
+              src="./Asset/portfolio/p5.png"
+              alt=""
+            />
+            <img
+              class="mb-6 rounded-2xl mx-auto lg-mx-0"
+              src="./Asset/portfolio/p8.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="p-card w-full lg:w-1/2 2xl:w-[33.33%] px-3 mb-5 mx-auto lg-mx-0"
+          >
+            <img
+              class="mb-6 rounded-2xl mx-auto lg-mx-0"
+              src="./Asset/portfolio/p3.png"
+              alt=""
+            />
+            <img
+              class="mb-6 rounded-2xl mx-auto lg-mx-0"
+              src="./Asset/portfolio/p6.png"
+              alt=""
+            />
+            <img
+              class="mb-6 rounded-2xl mx-auto lg-mx-0"
+              src="./Asset/portfolio/p9.png"
+              alt=""
+            />
+          </div>
+          <!-- <div class="p-card h-[305px] w-full  lg:w-1/2 2xl:w-[33.33%] px-3.75 mb-5">
+                <div class="img-cntn ">
+                    <img src="./Asset/portfolio/p2.png" alt=""></div>
+            </div>
+            <div class="p-card w-full lg:w-1/2 2xl:w-[33.33%] px-3.75 mb-5">
+                <div class="img-cntn ">
+                    <img src="./Asset/portfolio/p3.png" alt=""></div>
+            </div>
+            <div class="p-card w-full lg:w-1/2 2xl:w-[33.33%] px-3.75 mb-5">
+                <div class="img-cntn ">
+                    <img src="./Asset/portfolio/p4.png" alt=""></div>
+            </div>
+            <div class="p-card w-full lg:w-1/2 2xl:w-[33.33%] px-3.75 mb-5">
+                <div class="img-cntn ">
+                    <img src="./Asset/portfolio/p5.png" alt=""></div>
+            </div>
+            <div class="p-card w-full lg:w-1/2 2xl:w-[33.33%] px-3.75 mb-5">
+                <div class="img-cntn ">
+                    <img src="./Asset/portfolio/p6.png" alt=""></div>
+            </div>
+            <div class="p-card w-full lg:w-1/2 2xl:w-[33.33%] px-3.75 mb-5">
+                <div class="img-cntn ">
+                    <img src="./Asset/portfolio/p7.png" alt=""></div>
+            </div>
+            <div class="p-card w-full lg:w-1/2 2xl:w-[33.33%] px-3.75 mb-5">
+                <div class="img-cntn ">
+                    <img src="./Asset/portfolio/p8.png" alt=""></div>
+            </div>
+            <div class="p-card w-full lg:w-1/2 2xl:w-[33.33%] px-3.75 mb-5">
+                <div class="img-cntn ">
+                    <img src="./Asset/portfolio/p9.png" alt=""></div>
+            </div> -->
+        </div>
+      </div>
+    </section>
+    <!-- VIDEO Portfolio-------- -->
+    <section class="video-sec py-15 xs:py-25">
+      <div class="container">
+        <div class="vid-cntn">
+          <div
+            class="sub-hd text-center text-[14px] md:text-[18px] tracking-normal! xs:tracking-[2px]"
+          >
+            Time stands still in every shot
+          </div>
+          <div
+            class="title2 text-center text-[17px] md:text-[30px] 2xl:text-[40px]"
+          >
+            VIDEO Portfolio
+          </div>
+        </div>
+        <div class="v-card service-card flex flex-wrap -mx-3.75">
+            <div class="w-full lg:w-1/2 px-3.75 mb-5 mx-auto ">
+                <img class="mx-auto 2xl:mx-0" src="./Asset/portfolio/v1.png" alt="">
+            </div>
+            <div class="w-full lg:w-1/2 px-3.75 mb-5 mx-auto ">
+                <img class="mx-auto 2xl:mx-0" src="./Asset/portfolio/v2.png" alt="">
+            </div>
+            <div class="w-full lg:w-1/2 2xl:w-[33.33%] px-3.75 mb-5 mx-auto ">
+                <img class="mx-auto 2xl:mx-0" src="./Asset/portfolio/v3.png" alt="">
+            </div>
+            <div class="w-full lg:w-1/2 2xl:w-[33.33%] px-3.75 mb-5 mx-auto ">
+                <img class="mx-auto 2xl:mx-0" src="./Asset/portfolio/v4.png" alt="">
+            </div>
+            <div class="w-full lg:w-1/2 2xl:w-[33.33%] px-3.75 mb-5 ">
+                <img class="mx-auto 2xl:mx-0" src="./Asset/portfolio/v5.png" alt="">
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section-------------------------------- -->
+    <footer class="footer-section sec-padding py-25">
+      <div class="container">
+        <div class="footer-cntn border-red-100">
+          <div class="flex flex-wrap -mx-3.75">
+            <div
+              class="f-card mb-5 lg:mb-0 w-full lg:w-1/2 2xl:w-3/12 px-3.75 flex justify-center 2xl:justify-start"
+            >
+              <div class="footer-logo">
+                <img src="./Asset/logo.png" alt="" />
+              </div>
+            </div>
+            <div class="f-card mb-5 lg:mb-0 w-full lg:w-1/2 2xl:w-3/12 px-3.75">
+              <div class="f-hdr text-center text-[24px] md:text-[32px]">
+                Get in touch
+              </div>
+              <ul class="mt-5">
+                <li class="f-link text-[18px] md:text-[24px]">
+                  <a href="">Hello@FOCALÉ.com</a>
+                </li>
+                <li class="f-link text-[18px] md:text-[24px]">
+                  <a href="">+1 234-567-8910</a>
+                </li>
+              </ul>
+            </div>
+            <div class="f-card mb-5 lg:mb-0 w-full md:w-1/2 2xl:w-3/12 px-3.75">
+              <div class="f-hdr text-center text-[24px] md:text-[32px]">
+                Locations
+              </div>
+              <ul class="mt-5">
+                <li class="f-link">
+                  <a href="">San Francisco — California</a>
+                </li>
+                <li class="f-link"><a href="">Palo Alto — Santa Clara</a></li>
+              </ul>
+            </div>
+            <div class="f-card mb-5 lg:mb-0 w-full md:w-1/2 2xl:w-3/12 px-3.75">
+              <div class="social-link">
+                <ul class="flex flex-row items-center justify-evenly mt-5">
+                  <li
+                    class="w-13 sm:w-16 h-13 sm:h-16 flex items-center justify-center bg-black hover:bg-[#8A0707] rounded-full"
+                  >
+                    <a href="#">
+                      <img src="./Asset/instagram.png" class="w-6 h-6" />
+                    </a>
+                  </li>
+                  <li
+                    class="w-13 sm:w-16 h-13 sm:h-16 flex items-center justify-center bg-black hover:bg-[#8A0707] rounded-full"
+                  >
+                    <a href="#">
+                      <img
+                        src="./Asset/new-twitter-ellipse.png"
+                        class="w-6 h-6"
+                      />
+                    </a>
+                  </li>
+                  <li
+                    class="w-13 sm:w-16 h-13 sm:h-16 flex items-center justify-center bg-black hover:bg-[#8A0707] rounded-full"
+                  >
+                    <a href="#">
+                      <img src="./Asset/youtube.png" class="w-6 h-6" />
+                    </a>
+                  </li>
+                  <li
+                    class="w-13 sm:w-16 h-13 sm:h-16 flex items-center justify-center bg-black hover:bg-[#8A0707] rounded-full"
+                  >
+                    <a href="#">
+                      <img src="./Asset/tiktok.png" class="w-6 h-6" />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="copy-text mt-[90px] py-[15px]">
+        <div class="line h-[1px] bg-white opacity-[.5]"></div>
+        <div
+          class="ftext-cntn container text-[18px] text-gray-500 text-center 2xl:text-start py-[20px]"
+        >
+          © 2026 all right reserved by
+          <a class="hover:text-amber-50" href="">FOCALÉ </a>
+        </div>
+      </div>
+    </footer>
+    <script src="./JS/script.js"></script>
+  </body>
 </html>

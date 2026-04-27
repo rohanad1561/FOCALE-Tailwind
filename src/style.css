@@ -86,7 +86,6 @@ body {
     margin-right: 15px;
   }
 
-  
   .nav-link:hover,
   .nav-link.active {
     color: var(--primary-color);
@@ -146,7 +145,6 @@ body {
   .banner-section {
     background: url("../Asset/Banner-BG.png") no-repeat center/cover;
     min-height: calc(100vh - 85px);
-    
   }
   .banner-sub {
     font-size: 20px;
@@ -172,8 +170,8 @@ body {
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     background: var(--primary-color);
     border-radius: 50%;
     z-index: 1;
@@ -464,6 +462,58 @@ body {
     color: var(--text-color);
 
     text-align: center;
+  }
+  .skill-section {
+    background: url("../Asset/about/skill-bg.png") no-repeat center/cover;
+  }
+
+  /* Team Section------------- */
+
+  .m-card:hover .member-data {
+    opacity: 0;
+  }
+  .team-social-link {
+    opacity: 0;
+  }
+
+  .m-card:hover .team-social-link {
+    opacity: 100% !important;
+  }
+  /* work_section------------- */
+  .work-txt {
+    background: linear-gradient(
+      to top,
+      rgba(138, 7, 7, 0.741),
+      rgba(0, 0, 0, 0.874)
+    );
+    top: 0;
+
+    left: 15px;
+    right: 15px;
+    bottom: 0px;
+    border-radius: 20px;
+    opacity: 0;
+  }
+  .work-card:hover .work-txt{
+    opacity: 100%;
+    transition: .5s linear ease;
+
+
+  }
+
+  .contact-form input , textarea{
+    padding: 25px 0 ;
+    border-bottom: 1px solid white;
+    width: 100%;
+    margin-bottom: 50px;
+    font-family: var(--font-urbanist);
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.451);
+
+  }
+
+  textarea{
+    padding:0 0 50px ;
   }
 
   /* Footer Section--------------- */
