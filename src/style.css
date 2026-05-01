@@ -41,7 +41,7 @@ body {
     rgba(153, 153, 153, 1) 0%
   );
 
-  --breakpoint-3xl: 1920px;
+  
   --breakpoint-xs: 475px;
 }
 
@@ -153,6 +153,9 @@ body {
     font-family: var(--font-syne);
     font-weight: 800;
     letter-spacing: 3px;
+  }
+  .bimg-card{
+    transform-origin: bottom center;
   }
 
   .circle-btn {
@@ -468,8 +471,21 @@ body {
   }
 
   /* Team Section------------- */
-
   .m-card:hover .member-data {
+    transition: .4s linear;
+    
+    transform: translateY(-200%);
+
+  }
+  .m-card:hover .team-social-link{
+    bottom: 15% !important;
+    transition: .1s linear ease;
+    opacity: 100% !important;
+  }
+
+
+
+  /* .m-card:hover .member-data {
     opacity: 0;
   }
   .team-social-link {
@@ -478,7 +494,7 @@ body {
 
   .m-card:hover .team-social-link {
     opacity: 100% !important;
-  }
+  } */
   /* work_section------------- */
   .work-txt {
     background: linear-gradient(

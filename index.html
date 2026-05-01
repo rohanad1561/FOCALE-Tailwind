@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FOCALÉ</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <link
       rel="icon"
       type="image/png"
@@ -34,10 +35,10 @@
           </div>
 
           <div
-            class="navbar-collapsed md:transition-[0.5s ease-linear] lg:static lg:min-h-fit absolute bg-black min-h-screen  left-0 top-[-100%] w-full z-3 pt-25 lg:py-0"
+            class="navbar-collapsed md:transition-[0.5s ease-linear] lg:static lg:min-h-fit absolute bg-black min-h-screen left-0 top-[-100%] w-full z-3 pt-25 lg:py-0"
           >
             <ul
-              class="flex lg:flex-row flex-col text-center gap-6 ms-auto justify-end "
+              class="flex lg:flex-row flex-col text-center gap-6 ms-auto justify-end"
             >
               <li>
                 <a class="nav-link active" href="./index.html">HOME</a>
@@ -64,16 +65,17 @@
       </div>
     </header>
     <!-- Banner Section-------------------- -->
-    <section class="banner-section relative overflow-hidden pb-[20px] 2xl:pb-[40px] pt-[20px] 2xl:pt-[40px]">
+    <section
+      class="banner-section relative overflow-hidden pb-[20px] 2xl:pb-[40px] pt-[20px] 2xl:pt-[40px]">
       <div class="container">
-        <div class="banner-content  mb-5">
+        <div class="banner-content mb-5">
           <h1
-            class="title1 text-[25px] xs:text-[30px] md:text-[35px] :text-[30px] 2xl:text-[80px]"
+            class="title1 text-[25px] xs:text-[30px] md:text-[35px] lg:text-[30px] 2xl:text-[80px]"
           >
             Turning Moments
           </h1>
           <h1
-            class="title1 text-[25px] xs:text-[30px]  md:text-[35px] :text-[30px] 2xl:text-[80px]"
+            class="title1 text-[25px] xs:text-[30px] md:text-[35px] lg:text-[30px] 2xl:text-[80px]"
           >
             Into <span class="text-[#8A0707]">Memories</span>
           </h1>
@@ -81,87 +83,10 @@
             Creating Art Through Every Click
           </p>
         </div>
-        <div class="rotate-box w-[300px] sm:w-[450px] md:w-[650px] 2xl:w-[1350px]  absolute bottom-[-30%] xs:bottom-[-10%] sm:bottom-[-550%] md:bottom-[-100%] lg:bottom-[-110%] 2xl:bottom-[-75%]  translate-x-[-50%] rounded-full left-[50%]"
-        >
-          <img
-            class="h-full w-full object-cover"
-            src="./Asset/round-img.png"
-            alt=""
-          />
-          <!-- <div
-            class="max-w-[240px] ima-1 absolute rotate-[-47deg] translate-x-[-8%] translate-y-[-16%]"
-          >
-            <img
-              class="h-full w-full object-cover"
-              src="./Asset/banner1.png"
-              alt=""
-            />
-          </div>
-          <div
-            class="max-w-[240px] ima-2 absolute rotate-[-3deg] translate-x-[150%] translate-y-[-63%]"
-          >
-            <img
-              class="h-full w-full object-cover"
-              src="./Asset/banner2.png"
-              alt=""
-            />
-          </div>
-          <div
-            class="max-w-[240px] ima-3 absolute rotate-[45deg] translate-x-[319%] translate-y-[-19%]"
-          >
-            <img
-              class="h-full w-full object-cover"
-              src="./Asset/banner3.png"
-              alt=""
-            />
-          </div>
-          <div
-            class="max-w-[240px] ima-4 absolute rotate-[90deg] translate-x-[388%] translate-y-[90%]"
-          >
-            <img
-              class="h-full w-full object-cover"
-              src="./Asset/banner4.png"
-              alt=""
-            />
-          </div>
-          <div
-            class="max-w-[240px] ima-5 absolute rotate-[-90deg] translate-x-[-70%] translate-y-[100%]"
-          >
-            <img
-              class="h-full w-full object-cover"
-              src="./Asset/banner5.png"
-              alt=""
-            />
-          </div>
-          <div
-            class="max-w-[240px] ima-6 absolute rotate-[-133deg] translate-x-[-3%] translate-y-[204%]"
-          >
-            <img
-              class="h-full w-full object-cover"
-              src="./Asset/banner6.png"
-              alt=""
-            />
-          </div>
-          <div
-            class="max-w-[240px] ima-7 absolute rotate-[-178deg] translate-x-[150%] translate-y-[249%]"
-          >
-            <img
-              class="h-full w-full object-cover"
-              src="./Asset/banner7.png"
-              alt=""
-            />
-          </div>
-          <div
-            class="max-w-[240px] ima-8 absolute rotate-[137deg] translate-x-[321%] translate-y-[204%]"
-          >
-            <img
-              class="h-full w-full object-cover"
-              src="./Asset/banner8.png"
-              alt=""
-            />
-          </div> -->
-        </div>
-        <div class="banner-btn flex justify-center absolute bottom-[40%] sm:bottom-[8%] left-1/2 -translate-x-1/2 block xs:hidden xl:block "
+       
+       
+        <div
+          class="banner-btn flex justify-center absolute bottom-[40%] sm:bottom-[5%] left-1/2 -translate-x-1/2 hidden xl:block"
         >
           <a
             class="circle-btn before-h-[50px]! before-w-[50px]! sm:before-h-[100px]! sm:before-w-[100px]!"
@@ -174,10 +99,38 @@
           </a>
         </div>
       </div>
+       <div class="slider-bar absolute bottom-[2%] xs:bottom-[6%] md:bottom-[12%] left-[50%] translate-x-[-50%] w-screen h-150 z-20 " id="slide-bar">
+        <div class="bimg-card absolute  left-[50%]  top-[50%] translate-x-[-50%] translate-y-[-50%] w-[250px] h-[200px] md:w-[300px] sm:h-[400px] ">
+          <img class="h-full w-full object-cover rounded-[20px]" src="./Asset/banner1.png" alt="">
+        </div>
+        <div class="bimg-card absolute  left-[50%]  top-[50%] translate-x-[-50%] translate-y-[-50%] w-[250px] h-[300px] md:w-[300px] sm:h-[400px] ">
+          <img class="h-full w-full object-cover rounded-[20px]" src="./Asset/banner2.png" alt="">
+        </div>
+        <div class="bimg-card absolute  left-[50%]  top-[50%] translate-x-[-50%] translate-y-[-50%] w-[250px] h-[300px] md:w-[300px] sm:h-[400px] ">
+          <img class="h-full w-full object-cover rounded-[20px]" src="./Asset/banner3.png" alt="">
+        </div>
+        <div class="bimg-card absolute  left-[50%]  top-[50%] translate-x-[-50%] translate-y-[-50%] w-[250px] h-[300px] md:w-[300px] sm:h-[400px] ">
+          <img class="h-full w-full object-cover rounded-[20px]" src="./Asset/banner4.png" alt="">
+        </div>
+        <div class="bimg-card absolute  left-[50%]  top-[50%] translate-x-[-50%] translate-y-[-50%] w-[250px] h-[300px] md:w-[300px] sm:h-[400px] ">
+          <img class="h-full w-full object-cover rounded-[20px]" src="./Asset/banner5.png" alt="">
+        </div>
+        <div class="bimg-card absolute  left-[50%]  top-[50%] translate-x-[-50%] translate-y-[-50%] w-[250px] h-[300px] md:w-[300px] sm:h-[400px] ">
+          <img class="h-full w-full object-cover rounded-[20px]" src="./Asset/banner6.png" alt="">
+        </div>
+        <div class="bimg-card absolute  left-[50%]  top-[50%] translate-x-[-50%] translate-y-[-50%] w-[250px] h-[300px] md:w-[300px] sm:h-[400px] ">
+          <img class="h-full w-full object-cover rounded-[20px]" src="./Asset/banner7.png" alt="">
+        </div>
+        <div class="bimg-card absolute  left-[50%]  top-[50%] translate-x-[-50%] translate-y-[-50%] w-[250px] h-[300px] md:w-[300px] sm:h-[400px] ">
+          <img class="h-full w-full object-cover rounded-[20px]" src="./Asset/banner8.png" alt="">
+        </div>
+
+
+        </div>
     </section>
 
     <!-- About Section---------------------- -->
-   <section class="about-sec py-15 xs:py-25">
+    <section class="about-sec py-15 xs:py-25">
       <div class="container">
         <div class="about-cntn flex flex-wrap items-center -mx-3.75">
           <div class="w-full 2xl:w-7/12 px-3.75">
@@ -752,14 +705,18 @@
           >
             Your Session, Step by Step
           </div>
-          <div class="title2 text-center">Process</div>
+          <div
+            class="title2 text-center text-[17px] md:text-[30px] 2xl:text-[40px]"
+          >
+            Process
+          </div>
         </div>
         <div class="process-card flex flex-wrap -mx-3.75">
           <div class="mb-5 xl:mb-0 w-full md:w-1/2 xl:w-[33.33%] px-3.75">
             <div class="service-card-1 px-[50px] py-[70px]">
               <div class="card-cntn">
                 <div class="card-num text-[100px] xs:text-[150px] ms-0">01</div>
-                <div class="card-hdr mb-5">Consult & Plan</div>
+                <div class="card-hdr text-[20px] mb-5">Consult & Plan</div>
                 <div class="card-para text-start max-w-[400px] w-full">
                   We start by understanding your vision and goals, ensuring
                   every detail is aligned with your expectations for a seamless
@@ -772,7 +729,7 @@
             <div class="service-card-1 px-[50px] py-[70px]">
               <div class="card-cntn">
                 <div class="card-num text-[100px] xs:text-[150px] ms-0">02</div>
-                <div class="card-hdr mb-5">Shoot Day</div>
+                <div class="card-hdr text-[20px] mb-5">Shoot Day</div>
                 <div class="card-para text-start max-w-[400px] w-full">
                   We start by understanding your vision and goals, ensuring
                   every detail is aligned with your expectations for a seamless
@@ -787,7 +744,7 @@
             <div class="service-card-1 px-[50px] py-[70px]">
               <div class="card-cntn">
                 <div class="card-num text-[100px] xs:text-[150px] ms-0">03</div>
-                <div class="card-hdr mb-5">Edit & Deliver</div>
+                <div class="card-hdr text-[20px] mb-5">Edit & Deliver</div>
                 <div class="card-para text-start max-w-[400px]">
                   We start by understanding your vision and goals, ensuring
                   every detail is aligned with your expectations for a seamless
@@ -937,89 +894,90 @@
     </section>
     <!-- Footer Section-------------------------------- -->
     <footer class="footer-section sec-padding py-25">
-      
       <div class="container">
         <div class="footer-cntn border-red-100">
-          <div class=" flex flex-wrap -mx-3.75">
-          <div class="f-card mb-5 lg:mb-0 w-full lg:w-1/2 2xl:w-3/12 px-3.75 flex justify-center 2xl:justify-start"
-          >
-            <div class="footer-logo">
-              <img src="./Asset/logo.png" alt="" />
+          <div class="flex flex-wrap -mx-3.75">
+            <div
+              class="f-card mb-5 lg:mb-0 w-full lg:w-1/2 2xl:w-3/12 px-3.75 flex justify-center 2xl:justify-start"
+            >
+              <div class="footer-logo">
+                <img src="./Asset/logo.png" alt="" />
+              </div>
             </div>
-          </div>
-          <div class="f-card mb-5 lg:mb-0 w-full lg:w-1/2 2xl:w-3/12 px-3.75">
-            <div class="f-hdr text-center text-[24px] md:text-[32px]">
-              Get in touch
-            </div>
-            <ul class="mt-5">
-              <li class="f-link text-[18px] md:text-[24px]">
-                <a href="">Hello@FOCALÉ.com</a>
-              </li>
-              <li class="f-link text-[18px] md:text-[24px]">
-                <a href="">+1 234-567-8910</a>
-              </li>
-            </ul>
-          </div>
-          <div class="f-card mb-5 lg:mb-0 w-full md:w-1/2 2xl:w-3/12 px-3.75">
-            <div class="f-hdr text-center text-[24px] md:text-[32px]">
-              Locations
-            </div>
-            <ul class="mt-5">
-              <li class="f-link"><a href="">San Francisco — California</a></li>
-              <li class="f-link"><a href="">Palo Alto — Santa Clara</a></li>
-            </ul>
-          </div>
-          <div class="f-card mb-5 lg:mb-0 w-full md:w-1/2 2xl:w-3/12 px-3.75">
-            
-            <div class="social-link">
-              <ul class="flex flex-row items-center justify-evenly mt-5">
-                <li
-                  class="w-13 sm:w-16 h-13 sm:h-16 flex items-center justify-center bg-black hover:bg-[#8A0707] rounded-full"
-                >
-                  <a href="#">
-                    <img src="./Asset/instagram.png" class="w-6 h-6" />
-                  </a>
+            <div class="f-card mb-5 lg:mb-0 w-full lg:w-1/2 2xl:w-3/12 px-3.75">
+              <div class="f-hdr text-center text-[24px] md:text-[32px]">
+                Get in touch
+              </div>
+              <ul class="mt-5">
+                <li class="f-link text-[18px] md:text-[24px]">
+                  <a href="">Hello@FOCALÉ.com</a>
                 </li>
-                <li
-                  class="w-13 sm:w-16 h-13 sm:h-16 flex items-center justify-center bg-black hover:bg-[#8A0707] rounded-full"
-                >
-                  <a href="#">
-                    <img
-                      src="./Asset/new-twitter-ellipse.png"
-                      class="w-6 h-6"
-                    />
-                  </a>
-                </li>
-                <li
-                  class="w-13 sm:w-16 h-13 sm:h-16 flex items-center justify-center bg-black hover:bg-[#8A0707] rounded-full"
-                >
-                  <a href="#">
-                    <img src="./Asset/youtube.png" class="w-6 h-6" />
-                  </a>
-                </li>
-                <li
-                  class="w-13 sm:w-16 h-13 sm:h-16 flex items-center justify-center bg-black hover:bg-[#8A0707] rounded-full"
-                >
-                  <a href="#">
-                    <img src="./Asset/tiktok.png" class="w-6 h-6" />
-                  </a>
+                <li class="f-link text-[18px] md:text-[24px]">
+                  <a href="">+1 234-567-8910</a>
                 </li>
               </ul>
             </div>
+            <div class="f-card mb-5 lg:mb-0 w-full md:w-1/2 2xl:w-3/12 px-3.75">
+              <div class="f-hdr text-center text-[24px] md:text-[32px]">
+                Locations
+              </div>
+              <ul class="mt-5">
+                <li class="f-link">
+                  <a href="">San Francisco — California</a>
+                </li>
+                <li class="f-link"><a href="">Palo Alto — Santa Clara</a></li>
+              </ul>
+            </div>
+            <div class="f-card mb-5 lg:mb-0 w-full md:w-1/2 2xl:w-3/12 px-3.75">
+              <div class="social-link">
+                <ul class="flex flex-row items-center justify-evenly mt-5">
+                  <li
+                    class="w-13 sm:w-16 h-13 sm:h-16 flex items-center justify-center bg-black hover:bg-[#8A0707] rounded-full"
+                  >
+                    <a href="#">
+                      <img src="./Asset/instagram.png" class="w-6 h-6" />
+                    </a>
+                  </li>
+                  <li
+                    class="w-13 sm:w-16 h-13 sm:h-16 flex items-center justify-center bg-black hover:bg-[#8A0707] rounded-full"
+                  >
+                    <a href="#">
+                      <img
+                        src="./Asset/new-twitter-ellipse.png"
+                        class="w-6 h-6"
+                      />
+                    </a>
+                  </li>
+                  <li
+                    class="w-13 sm:w-16 h-13 sm:h-16 flex items-center justify-center bg-black hover:bg-[#8A0707] rounded-full"
+                  >
+                    <a href="#">
+                      <img src="./Asset/youtube.png" class="w-6 h-6" />
+                    </a>
+                  </li>
+                  <li
+                    class="w-13 sm:w-16 h-13 sm:h-16 flex items-center justify-center bg-black hover:bg-[#8A0707] rounded-full"
+                  >
+                    <a href="#">
+                      <img src="./Asset/tiktok.png" class="w-6 h-6" />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
-        
-        </div>
-        
       </div>
-      
+
       <div class="copy-text mt-[90px] py-[15px]">
-        <div class="line h-[1px] bg-white opacity-[.5] "></div>
-          <div class="ftext-cntn container text-[18px] text-gray-500 text-start text-center 2xl:text-start  py-[20px]">
-            © 2026 all right reserved by 
-            <a class="hover:text-amber-50"  href="">FOCALÉ </a>
-          </div>
+        <div class="line h-[1px] bg-white opacity-[.5]"></div>
+        <div
+          class="ftext-cntn container text-[18px] text-gray-500 text-start text-center 2xl:text-start py-[20px]"
+        >
+          © 2026 all right reserved by
+          <a class="hover:text-amber-50" href="">FOCALÉ </a>
         </div>
+      </div>
     </footer>
 
     <!-- Splider js -->
